@@ -1,4 +1,4 @@
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/index";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,9 +12,9 @@ export default function Index() {
     <main>
       <section className="grid-container">
         <article className="flex flex-col justify-center card p-4 bg-accent-light">
-          <h1 className="text-3xl mb-2">
+          <h1 className="mb-6">
             Create and schedule content{" "}
-            <span className="text-primary">quicker</span>:
+            <span className="text-primary italic">quicker</span>:
           </h1>
           <button className="font-bold bg-accent hover:bg-amber-500 cursor-pointer py-3 px-4 rounded-full">
             Create post
@@ -37,9 +37,9 @@ export default function Index() {
         </article>
 
         <article className="flex flex-col justify-between card bg-primary-light p-4  overflow-hidden">
-          <h1 className="text-3xl font-semibold">Schedule to social media</h1>
+          <h2 className="font-semibold">Schedule to social media</h2>
           <div className="w-[300px]">
-            <img src="/public/images/illustration-schedule-posts.webp" />
+            <img src="/images/illustration-schedule-posts.webp" />
           </div>
           <p>
             Optimize post timings to publish content at the perfect time for
@@ -48,7 +48,7 @@ export default function Index() {
         </article>
 
         <article className="card p-4 bg-accent">
-          <h1 className="text-3xl mb-10">
+          <h1 className="mb-10">
             Write your <br />
             content using
             <br /> AI
@@ -59,37 +59,35 @@ export default function Index() {
         <article className="card p-4">
           <img
             className="w-[200px] mb-1"
-            src="/public/images/illustration-multiple-platforms.webp"
+            src="/images/illustration-multiple-platforms.webp"
           />
-          <p className="text-3xl">Maintain multiple accounts and platforms</p>
+          <h2>Manage multiple accounts and platforms</h2>
         </article>
 
         <article className="card p-4 bg-accent overflow-hidden">
-          <p className="text-3xl mb-4">
-            Maintain a consistent posting schedule
-          </p>
+          <h2 className="mb-4">Maintain a consitent posting schedule</h2>
           <img
             className="w-[200px] mb-1"
-            src="/public/images/illustration-consistent-schedule.webp"
+            src="/images/illustration-consistent-schedule.webp"
           />
         </article>
         <article className="card p-4">
-          <h1 className="text-3xl">
+          <h1>
             <code>&#62;</code> 56%
           </h1>
           <p className="text-xs mb-6">Faster Audience growth</p>
           <img
             className="h-12 mb-1"
-            src="/public/images/illustration-audience-growth.webp"
+            src="/images/illustration-audience-growth.webp"
           />
         </article>
 
         <article className="flex items-center card p-4 text-white bg-primary">
           <img
             className="w-1/2 mb-1"
-            src="/public/images/illustration-grow-followers.webp"
+            src="/images/illustration-grow-followers.webp"
           />
-          <h1 className="text-3xl">Grow followers with non-stop content.</h1>
+          <h1>Grow followers with non-stop content.</h1>
         </article>
       </section>
     </main>

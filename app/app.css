@@ -29,6 +29,18 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  @apply text-4xl;
+  line-height: 30px;
+  @apply font-medium;
+}
+
+h2 {
+  @apply text-3xl;
+  line-height: 28px;
+  @apply font-medium;
+}
+
 @layer components {
   .panel {
     @apply rounded-md;
