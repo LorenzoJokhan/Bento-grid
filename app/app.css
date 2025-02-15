@@ -3,13 +3,108 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --color-primary-light: hsl(254, 88%, 90%);
+    --color-primary: hsl(256, 67%, 59%);
+    --color-accent-light: hsl(31, 66%, 93%);
+    --color-accent: hsl(39, 100%, 71%);
+    --color-background: hsl(260, 18%, 97%);
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
+  @apply bg-background dark:bg-gray-950;
+  height: 100%;
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-md;
+    @apply drop-shadow-xl;
+  }
+
+  .card {
+    @apply bg-white;
+    @apply rounded-md;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    "A B B C"
+    "A E F C"
+    "D E F C"
+    "D G H H";
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 0.5fr 1fr 0.5fr;
+    height: 800px;
+    max-width: 1020px;
+    gap: 25px;
+  }
+
+  .grid-container > article:nth-child(1) {
+    grid-area: A;
+  }
+
+  .grid-container > article:nth-child(2) {
+    grid-area: B;
+  }
+
+  .grid-container > article:nth-child(3) {
+    grid-area: C;
+  }
+
+  .grid-container > article:nth-child(4) {
+    grid-area: D;
+  }
+
+  .grid-container > article:nth-child(5) {
+    grid-area: E;
+  }
+
+  .grid-container > article:nth-child(6) {
+    grid-area: F;
+  }
+
+  .grid-container > article:nth-child(7) {
+    grid-area: G;
+  }
+
+  .grid-container > article:nth-child(8) {
+    grid-area: H;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+ .grid-container {
+  margin: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "B"
+    "E"
+    "F"
+    "C"
+    "H"
+    "G"
+    "A"
+    "D";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  height: fit-content;
+  row-gap: 30px;
+ }
 }
