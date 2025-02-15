@@ -7,6 +7,10 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
+export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+  return {};
+}
+
 export default function Index() {
   return (
     <main>
