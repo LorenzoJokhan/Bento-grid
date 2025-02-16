@@ -32,22 +32,17 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://bento-grid-1cagx23uo-lorenzojokhans-projects.vercel.app/
 
 ## My process
 
 ### Built with
-
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Grid
+- [React](https://reactjs.org/) - React library
+- [React-router 7](https://nextjs.org/) - https://reactrouter.com/
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
 
 ### What I learned
 
