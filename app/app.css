@@ -41,6 +41,12 @@ h2 {
   @apply font-medium;
 }
 
+@keyframes popup {
+  0% {
+    opacity: 0%;
+  }
+}
+
 @layer components {
   .panel {
     @apply rounded-md;
@@ -48,8 +54,13 @@ h2 {
   }
 
   .card {
+    will-change: opacity;
     @apply bg-white;
     @apply rounded-md;
+    animation-name: popup;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    
   }
 
   .grid-container {
