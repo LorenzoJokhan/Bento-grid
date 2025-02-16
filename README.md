@@ -27,16 +27,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 
 ### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![screencapture-localhost-5173-2025-02-16-00_22_50](https://github.com/user-attachments/assets/d521d93b-3fe2-418f-8d94-8f6c70434e8f)
 
 ### Links
 
