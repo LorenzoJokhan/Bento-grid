@@ -1,17 +1,6 @@
-import type { Route } from "./+types/index";
+import "./App.css";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
-}
-
-export async function clientLoader({ params }: Route.ClientLoaderArgs) {
-  return {};
-}
-
-export default function Index() {
+function App() {
   return (
     <main>
       <section className="grid-container">
@@ -97,3 +86,5 @@ export default function Index() {
     </main>
   );
 }
+
+export default App;
